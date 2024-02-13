@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  captcha:
+    image: "finschia/captcha:manual"
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: on-failure

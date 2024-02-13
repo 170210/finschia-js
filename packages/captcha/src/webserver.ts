@@ -8,7 +8,7 @@ import views from "koa-views";
 import cors from "@koa/cors";
 
 const captchaFaucetService = new CaptchaFaucetService(
-  configuration.FAUCET_PORT,
+  configuration.FAUCET_URL,
   configuration.GOOGLE_RECAPTCHA_SECRET_KEY,
   configuration.DENOM,
   configuration.MIN_SCORE,

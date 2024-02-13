@@ -20,7 +20,7 @@ function getEnvVarAsNumber(name:string):number{
 }
 
 export const PORT = getEnvVarAsString('PORT');
-export const FAUCET_PORT = getEnvVarAsString('FAUCET_PORT');
+export const FAUCET_URL = getEnvVarAsString('FAUCET_URL');
 export const GOOGLE_RECAPTCHA_SITE_KEY = getEnvVarAsString('GOOGLE_RECAPTCHA_SITE_KEY');
 export const GOOGLE_RECAPTCHA_SECRET_KEY = getEnvVarAsString('GOOGLE_RECAPTCHA_SECRET_KEY');
 export const DENOM = getEnvVarAsString('DENOM');

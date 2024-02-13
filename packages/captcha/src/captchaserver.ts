@@ -7,9 +7,8 @@ export class CaptchaFaucetService {
   private readonly denom: string;
   private readonly minScore: number;
 
-  constructor(faucetPort: string, recaptchaSecretKey: string, denom: string, minScore: number) {
-    const FAUCET_URL="http://localhost:"+faucetPort;
-    this.faucetClient = new FaucetClient(FAUCET_URL);
+  constructor(faucetUrl: string, recaptchaSecretKey: string, denom: string, minScore: number) {
+    this.faucetClient = new FaucetClient(faucetUrl);
     this.recaptchaSecretKey = recaptchaSecretKey;
     this.denom = denom;
     this.minScore = minScore;
